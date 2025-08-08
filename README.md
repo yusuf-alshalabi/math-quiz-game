@@ -60,8 +60,8 @@
 
    ## 🖥 Example Usage 
    
-   ''' 
    
+
       How many Questions do you want to answer? 1 
       Enter Questions Level [1] Easy, [2] Med, [3] Hard, [4] Mix ? 2 
       Enter Operation Type [1] Add, [2] Sub, [3] Mul, [4] Div, [5] Mix ? 5
@@ -80,7 +80,7 @@
       Operation Type : Mix.
       Number of Right Answers : 1.
       Number of Wrong Answers : 0.
- ...
+ 
    --- 
    
    ## 🚀 Future Development Plan 
