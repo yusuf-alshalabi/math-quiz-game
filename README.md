@@ -12,7 +12,7 @@
 
    The program presents questions one by one, provides immediate feedback with colored console effects based on correctness, and displays a final summary indicating pass or fail status.
 
-    --- 
+   --- 
 
    ## ✨ Features 
 
@@ -44,68 +44,69 @@
 
    ## ▶ How to Run
 
-    1. Open the source code in your C++ development environment. 
+   1. Open the source code in your C++ development environment. 
 
-    2. Compile the code. 
+   2. Compile the code. 
 
-    3. Run the executable and follow on-screen instructions. 
+   3. Run the executable and follow on-screen instructions. 
 
-    4. Answer the questions as they appear. 
+   4. Answer the questions as they appear. 
 
-    5. Review your results at the end. 
+   5. Review your results at the end. 
 
-    6. Choose to play again or exit. 
+   6. Choose to play again or exit. 
 
-    --- 
+   --- 
 
-    ## 🖥 Example Usage 
+   ## 🖥 Example Usage 
+   
+   ''' 
+   
+      How many Questions do you want to answer? 1 
+      Enter Questions Level [1] Easy, [2] Med, [3] Hard, [4] Mix ? 2 
+      Enter Operation Type [1] Add, [2] Sub, [3] Mul, [4] Div, [5] Mix ? 5
+      Question[1/3]
 
-    How many Questions do you want to answer? 1 
-    Enter Questions Level [1] Easy, [2] Med, [3] Hard, [4] Mix ? 2 
-    Enter Operation Type [1] Add, [2] Sub, [3] Mul, [4] Div, [5] Mix ? 5
-    Question[1/3]
-    24
-    12  +
-    ------------------------
-    36
-    Your answer: 36
-    Right Answer :-)
+      24
+      12  +
+      ------------------------
+      36
+      Your answer: 36
+      Right Answer :-)
+      
+      Final Results is Pass :-) 
+      Number of Questions : 1.
+      Questions Level : Med. 
+      Operation Type : Mix.
+      Number of Right Answers : 1.
+      Number of Wrong Answers : 0.
+ ...
+   --- 
+   
+   ## 🚀 Future Development Plan 
 
-    ...
+   - 🛠 *Second Version (OOP):* Rewrite using Object-Oriented Programming for better structure and maintainability.
 
-    Final Results is Pass :-) 
-    Number of Questions : 1.
-    Questions Level : Med. 
-    Operation Type : Mix.
-    Number of Right Answers : 1.
-    Number of Wrong Answers : 0.
+   - 🖼 *Third Version (GUI):* Develop a graphical user interface using Qt or wxWidgets for desktop experience. 
 
-    --- 
-    
-    ## 🚀 Future Development Plan 
+   - 🎓 *Professional Growth:* Enhance skills to become a professional desktop application developer.
 
-    - 🛠 *Second Version (OOP):* Rewrite using Object-Oriented Programming for better structure and maintainability.
+   ---
 
-    - 🖼 *Third Version (GUI):* Develop a graphical user interface using Qt or wxWidgets for desktop experience. 
+   ## 📄 License
 
-    - 🎓 *Professional Growth:* Enhance skills to become a professional desktop application developer.
+   - This project is licensed under the *MIT License*. You are free to use, modify, and distribute this software with proper attribution. See the included LICENSE file for details. 
 
-    ---
-    
-    ## 📄 License
+   ---
 
-    This project is licensed under the *MIT License*. You are free to use, modify, and distribute this software with proper attribution. See the included LICENSE file for details. 
+   ## 🤝 Contributions
 
-    ---
+   - Suggestions and improvements are always welcome! Feel free to open Issues or Pull Requests. 
 
-    ## 🤝 Contributions
+   ---
 
-    Suggestions and improvements are always welcome! Feel free to open Issues or Pull Requests. 
+   ## 📬 Contact
 
-    ---
+-  For questions or suggestions, reach out via LinkedIn: [Yusuf Zakaria Alshalabi](https://www.linkedin.com/in/yusuf-zakaria-alshalabi/) 
 
-    ## 📬 Contact
-
-    For questions or suggestions, reach out via LinkedIn: [Yusuf Zakaria Alshalabi](https://www.linkedin.com/in/yusuf-zakaria-alshalabi/) 
-
-    ---
+   ---
