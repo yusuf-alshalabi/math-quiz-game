@@ -55,19 +55,15 @@ int randomNumber(int from, int to) {
 // Read from user how many questions they want to answer
 short readHowManyQuestions() {
     short rounds = 0;
-    while (true) {
-        cout << "How many Questions do you want to answer? ";
-        cin >> rounds;
-        // Validate input: must be positive number
-        if (cin.fail() || rounds < 0) {
+    cout << "How many Questions do you want to answer? ";
+    cin >> rounds;
+    // Validate input: must be positive number
+    while (cin.fail() || rounds < 0) {
             cin.clear();
-            cin.ignore(1000, '\n');
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             cout << "Invalid input. Please enter a positive number.\n\n";
-        }
-        else {
-            cin.ignore(1000, '\n');
-            break;
-        }
+            cout << "How many Questions do you want to answer? ";
+            cin >> rounds;
     }
     return rounds;
 }
@@ -75,19 +71,16 @@ short readHowManyQuestions() {
 // Read from user the desired difficulty level of questions
 enQuestionsLevel readQuestionsLevel() {
     short questionsLevel = 0;
-    while (true) {
-        cout << "Enter Questions Level [1] Easy, [2] Med, [3] Hard, [4] Mix ? ";
-        cin >> questionsLevel;
-        // Validate input is between 1 and 4
-        if (cin.fail() || questionsLevel < 1 || questionsLevel > 4) {
+    cout << "Enter Questions Level [1] Easy, [2] Med, [3] Hard, [4] Mix ? ";
+    cin >> questionsLevel;
+    // Validate input is between 1 and 4
+    while (cin.fail() || questionsLevel < 1 || questionsLevel > 4) {
+      
             cin.clear();
-            cin.ignore(1000, '\n');
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             cout << "Invalid input.\n\n";
-        }
-        else {
-            cin.ignore(1000, '\n');
-            break;
-        }
+            cout << "Enter Questions Level [1] Easy, [2] Med, [3] Hard, [4] Mix ? ";
+            cin >> questionsLevel;
     }
     return (enQuestionsLevel)questionsLevel;
 }
@@ -95,19 +88,15 @@ enQuestionsLevel readQuestionsLevel() {
 // Read from user the operation type for the questions
 enOperationType readOperationsType() {
     short operationType = 0;
-    while (true) {
-        cout << "Enter Operation Type [1] Add, [2] Sub, [3] Mul, [4] Div, [5] Mix ? ";
-        cin >> operationType;
-        // Validate input is between 1 and 5
-        if (cin.fail() || operationType < 1 || operationType > 5) {
+    cout << "Enter Operation Type [1] Add, [2] Sub, [3] Mul, [4] Div, [5] Mix ? ";
+    cin >> operationType;
+    // Validate input is between 1 and 5
+    while (cin.fail() || operationType < 1 || operationType > 5) {
             cin.clear();
             cin.ignore(1000, '\n');
             cout << "Invalid input.\n\n";
-        }
-        else {
-            cin.ignore(1000, '\n');
-            break;
-        }
+            cout << "Enter Operation Type [1] Add, [2] Sub, [3] Mul, [4] Div, [5] Mix ? ";
+            cin >> operationType;
     }
     return (enOperationType)operationType;
 }
@@ -269,17 +258,12 @@ stQuestionParts readQuestionParts(int questionNumber, stConfigration questionInf
 // Read user's answer with validation
 int readAnswer() {
     int answer;
-    while (true) {
-        cin >> answer;
-        if (cin.fail()) {
+    cin >> answer;
+    while (cin.fail()) {
             cin.clear();
-            cin.ignore(1000, '\n');
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             cout << "Invalid input. Please enter a number.\n\n";
-        }
-        else {
-            cin.ignore(1000, '\n');
-            break;
-        }
+            cin >> answer;
     }
     return answer;
 }
