@@ -381,7 +381,7 @@ bool playAgain() {
     {
         cout << "\n\n" << tabs(2) << "Do you want to play again (Y/N) ? \n\n\n";
         cout << tabs(4);
-        getline(cin, again);
+        getline(cin>>ws, again);
         if (again == "Y" || again == "y")
             return true;
         else if (again == "N" || again == "n")
